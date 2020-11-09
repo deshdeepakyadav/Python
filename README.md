@@ -504,6 +504,7 @@ The escape character allows you to use double quotes when you normally would not
 
 Other escape characters used in Python
 Code|Result
+-----|-----
 \'|	Single Quote	
 \\|	Backslash	
 \n|	New Line	
@@ -518,6 +519,7 @@ Code|Result
 Python has a set of built-in methods that you can use on strings.
 
 Method|	Description
+---------|------------------------------------------------
 capitalize()|	Converts the first character to upper case
 casefold()|	Converts string into lower case
 center()|	Returns a centered string
