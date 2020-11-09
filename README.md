@@ -6,7 +6,7 @@ It is used for:
 - software development,
 - mathematics,
 - system scripting.
-#### What can Python do?
+### What can Python do?
 - Python can be used on a server to create web applications.
 - Python can be used alongside software to create workflows.
 - Python can connect to database systems. It can also read and modify files.
@@ -183,10 +183,12 @@ print("Hello, World!")
 As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.
 
 
-Built-in Data Types
+## Built-in Data Types
+
 In programming, data type is an important concept.
 Variables can store data of different types, and different types can do different things.
 Python has the following data types built-in by default, in these categories:
+```
 Text Type:	str
 Numeric Types:	int, float, complex
 Sequence Types:	list, tuple, range
@@ -194,7 +196,10 @@ Mapping Type:	dict
 Set Types:	set, frozenset
 Boolean Type:	bool
 Binary Types:	bytes, bytearray, memoryview
-Setting Data Type:
+```
+
+**Setting Data Type:**
+```
 x = "Hello World"	#str	
 x = 20	#int	
 x = 20.5	#float	
@@ -209,13 +214,16 @@ x = True	#bool
 x = b"Hello"	 #bytes	
 x = bytearray(5)	#bytearray	
 x = memoryview(bytes(5))	#memoryview
-Getting the Data Type
+```
+**Getting the Data Type**
 You can get the data type of any object by using the type() function:
+```
 x = 5
 print(type(x))
-
-Setting the Specific Data Type
+```
+**Setting the Specific Data Type:**
 If you want to specify the data type, you can use the following constructor functions:
+```
 x = str("Hello World")	#str	
 x = int(20)	#int	
 x = float(20.5)	#float	
@@ -230,22 +238,28 @@ x = bool(5)	#bool
 x = bytes(5)	#bytes	
 x = bytearray(5)	#bytearray	
 x = memoryview(bytes(5))	#memoryview
+```
 
-Python Numbers
+## Python Numbers
 There are three numeric types in Python:
-•	int
-•	float
-•	complex
+- int
+- float
+- complex
 Variables of numeric types are created when you assign a value to them:
+```
 x = 1    # int
 y = 2.8  # float
 z = 1j   # complex
+```
 To verify the type of any object in Python, use the type() function:
+```
 print(type(x))
 print(type(y))
 print(type(z))
-Int
+```
+### Int
 Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+```
 x = 1
 y = 35656222554887711
 z = -3255522
@@ -253,8 +267,10 @@ z = -3255522
 print(type(x))
 print(type(y))
 print(type(z))
-Float
+```
+### Float
 Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+```
 x = 1.10
 y = 1.0
 z = -35.59
@@ -262,7 +278,9 @@ z = -35.59
 print(type(x))
 print(type(y))
 print(type(z))
+```
 Float can also be scientific numbers with an "e" to indicate the power of 10.
+```
 x = 35e3
 y = 12E4
 z = -87.7e100
@@ -270,8 +288,10 @@ z = -87.7e100
 print(type(x))
 print(type(y))
 print(type(z))
-Complex
+```
+### Complex
 Complex numbers are written with a "j" as the imaginary part:
+```
 x = 3+5j
 y = 5j
 z = -5j
@@ -279,8 +299,10 @@ z = -5j
 print(type(x))
 print(type(y))
 print(type(z))
-Type Conversion
+```
+### Type Conversion
 You can convert from one type to another with the int(), float(), and complex() methods:
+```
 x = 1    # int
 y = 2.8  # float
 z = 1j   # complex
@@ -301,19 +323,22 @@ print(c)
 print(type(a))
 print(type(b))
 print(type(c))
-Random Number
+```
+### Random Number
 Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers:
+```
 import random
 
 print(random.randrange(1, 10))
-
-Python Casting
+```
+## Python Casting
 Specify a Variable Type
 There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
 Casting in python is therefore done using constructor functions:
-•	int() - constructs an integer number from an integer literal, a float literal (by rounding down to the previous whole number), or a string literal (providing the string represents a whole number)
-•	float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)
-•	str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals
+- int() - constructs an integer number from an integer literal, a float literal (by rounding down to the previous whole number), or a string literal (providing the string represents a whole number)
+- float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)
+- str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals
+```
 x = int(1)   # x will be 1
 y = int(2.8) # y will be 2
 z = int("3") # z will be 3
@@ -324,26 +349,35 @@ w = float("4.2") # w will be 4.2
 x = str("s1") # x will be 's1'
 y = str(2)    # y will be '2'
 z = str(3.0)  # z will be '3.0'
-String Literals
+```
+## String Literals
 String literals in python are surrounded by either single quotation marks, or double quotation marks.
 'hello' is the same as "hello".
 You can display a string literal with the print() function:
+```
 print("Hello")
 print('Hello')
-Assign String to a Variable
+```
+### Assign String to a Variable
 Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+```
 a = "Hello"
 print(a)
-Multiline Strings
+```
+### Multiline Strings
 You can assign a multiline string to a variable by using three quotes:
+```
 a = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua."""
 print(a)
+```
 Or three single quotes:
+```
 a = '''Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua.'''
 print(a)
+```
